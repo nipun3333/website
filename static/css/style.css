@@ -102,3 +102,112 @@ nav ul li a:hover{
         left: 0;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*========================================================================= aryan-=========================================================== */
+
+
+
+
+
+.about_container{
+    background-color: rgba(230, 247, 253, 0.548);
+    /* background-color: rgb(255, 2, 2); */
+    border-radius: 20px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 150px 50px;
+    width: 100%;    
+    margin-top: 50px;
+    margin-bottom: 50px;    
+    box-shadow: 0 0px 56px #ccc;
+}
+.contact_container{
+    /* background-color: rgba(230, 247, 253, 0.548); */
+    /* background-color: rgb(255, 2, 2); */
+    border-radius: 20px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 150px 30px;
+    width: 100%;    
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+    /* box-shadow: 0 0px 56px #ccc; */
+}
+.contact-content{
+    background-color: rgba(230, 247, 253, 0.548);
+    box-shadow: 0 0px 56px #ccc;
+    border-radius: 20px;
+    padding: 20px 40px 20px 40px;            
+    width: 100%;    
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.box{
+    text-align: justify; 
+    height: 100%;
+    width: 100%;
+
+    
+}
+.cbox{
+    background-color: rgba(230, 247, 253, 0.548);
+    box-shadow: 0 0px 56px #ccc;
+    border-radius: 20px;
+    text-align: center; 
+    height: 100%;
+    width: 100%;    
+}
+.box1{
+    text-align: center;     
+    height: 100%;
+    width: 100%;
+}
+
+.cbox .smbox{
+    margin: 35px 0px 40px 0px;
+} 
+.cbox .smbox a{
+    margin: 0px 10px 0px 0px;
+} 
+
+.svg_img{
+    /* background-color: aliceblue; */
+    height: 90%;
+    width: 70%;
+
+}
+.team_disc{
+    
+    height: 100%;
+    width: 100%;
+}
+form{
+    margin-top: 60px;    
+}
+form div{
+    margin: 0px 0 40px 0;   
+}
+form div input , textarea{
+    max-width: 390px;
+    width: 70%;
+    height: 40px;
+    border-radius: 10px;
+}
+
+
