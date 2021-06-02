@@ -14,9 +14,9 @@ nav{
 
 label.logo{
     color: #ADEFD1FF;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 80px;
-    padding: 0 80px;
+    padding: 0 40px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -72,7 +72,7 @@ nav ul li a:hover{
     }
 }
 
-@media(max-width: 1020px){
+@media(max-width: 1050px){
     .checkbtn{
         display: block;
     }
@@ -102,3 +102,11 @@ nav ul li a:hover{
         left: 0;
     }
 }
+
+.short-text { display: none; }
+
+@media (max-width: 600px) {
+    .short-text { display: inline-block; }
+    .full-text { display: none; }
+}
+

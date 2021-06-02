@@ -1,10 +1,15 @@
+{% load static %} 
 <nav>
   <input type="checkbox" id="check">
   <label for="check" class="checkbtn">
     <i class="fas fa-bars"> </i>
   </label>
   
-  <a href="/" class='anc'><label class="logo">ShreeRamEngineers</label></a>
+  <a href="/" class='anc'><label class="logo">
+    <img src="{% static 'images\logo.png' %}" alt="logo" style="width:45px;height:45px;">
+    <span class="full-text">Shree Ram Engineers</span>
+    <span class="short-text">SRE</span>
+  </label></a>
 
   <ul>
 
