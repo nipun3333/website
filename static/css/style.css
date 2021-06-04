@@ -217,7 +217,7 @@ nav ul li a:hover{
         grid-gap: 100px 20px;
     }
 }
-@media(max-width: 470px){
+@media(max-width: 600px){
     .svg_img{
         height: 80%;
         width: 80%;
@@ -353,7 +353,7 @@ button{
 
 
 
-@media (max-width: 900px) {
+@media (max-width: 1030px) {
     .details{
         margin: auto;
         width: 50%;
