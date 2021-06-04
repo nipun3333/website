@@ -7,16 +7,17 @@
 }
 
 nav{
-    background: #00203FFF;
-    height: 80px;
+    background: rgba(0, 32, 63, 0.8);
+    height:80px;
     width:100%;
+    position: fixed;
 }
 
 label.logo{
     color: #ADEFD1FF;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 80px;
-    padding: 0 80px;
+    padding: 0 40px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -33,7 +34,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: white;
+    color: #ADEFD1FF;
     font-size: 18px;
     text-transform: uppercase;
     font-weight: bold;
@@ -50,7 +51,7 @@ nav ul li a:hover{
 
 .checkbtn{
     font-size: 30px;
-    color: white;
+    color: #ADEFD1FF;
     float: right;
     line-height: 80px;
     margin-right: 40px;
@@ -64,7 +65,7 @@ nav ul li a:hover{
 
 @media(max-width: 1150px){
     label.logo{
-        font-size: 30px;
+        font-size: 20px;
         padding-left: 50px;
     }
     nav ul li a{
@@ -72,7 +73,7 @@ nav ul li a:hover{
     }
 }
 
-@media(max-width: 1020px){
+@media(max-width: 1050px){
     .checkbtn{
         display: block;
     }
@@ -269,3 +270,96 @@ button{
 }
 
 
+=======
+.short-text { display: none; }
+
+@media (max-width: 600px) {
+    .short-text { display: inline-block; }
+    .full-text { display: none; }
+}
+
+.name{
+    background: #ADEFD1FF;
+    height: 100%;
+    width:100%;
+    padding-top: 1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cname{
+    margin-left: 15%;
+    margin-top: 250px;
+    font-weight: bold;
+    color: #00203FFF;
+    font-size: 50px;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 3px;
+}
+
+.details{
+    margin-right: 20%;
+    font-weight: 500;
+    color: #00203FFF;
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 220px;
+    padding-bottom: 250px;
+    letter-spacing: 2px;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.policy{
+    width: 100%;
+    height: 621px;
+}
+
+.heading{
+    margin: auto;
+    width: 50%;
+    font-size: 55px;
+    margin-top: 30px;
+    font-weight: 600;
+    text-align: center;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+}
+
+.content{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 30px;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+}
+
+
+
+
+@media (max-width: 900px) {
+    .details{
+        margin: auto;
+        width: 50%;
+        text-align: center;
+        font-size: 18px;
+    }
+    .name{
+        grid-template-columns: 1fr;
+    }
+    .cname{
+        margin: auto;
+        width: 100%;
+        margin-top: 90px;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .heading{
+        font-size: 45px;
+    }
+    .content{
+        font-size: 25px;
+    }
+}
