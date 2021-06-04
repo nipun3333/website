@@ -11,6 +11,10 @@ nav{
     height:80px;
     width:100%;
     position: fixed;
+    top: 0;
+}
+.main{
+    margin-top: 80px;
 }
 
 label.logo{
@@ -63,7 +67,7 @@ nav ul li a:hover{
     display: none;
 }
 
-@media(max-width: 1150px){
+@media(max-width: 1280px){
     label.logo{
         font-size: 20px;
         padding-left: 50px;
@@ -73,7 +77,7 @@ nav ul li a:hover{
     }
 }
 
-@media(max-width: 1050px){
+@media(max-width: 1100px){
     .checkbtn{
         display: block;
     }
@@ -132,7 +136,7 @@ nav ul li a:hover{
     grid-template-columns: 1fr 1fr;
     grid-gap: 150px 50px;
     width: 100%;    
-    margin-top: 50px;
+    
     margin-bottom: 50px;    
     box-shadow: 0 0px 56px #ccc;
 }
@@ -153,10 +157,10 @@ nav ul li a:hover{
 .contact-content{
     background-color: rgba(230, 247, 253, 0.548);
     box-shadow: 0 0px 56px #ccc;
-    border-radius: 20px;
+    border-radius:  0 0 20px 20px;
     padding: 20px 40px 20px 40px;            
     width: 100%;    
-    margin-top: 50px;
+    
     margin-bottom: 50px;
 }
 .box{
@@ -270,7 +274,18 @@ button{
 }
 
 
-=======
+
+
+
+
+
+
+/* ====================================================   Nipun  -=============================================== */
+
+
+
+
+
 .short-text { display: none; }
 
 @media (max-width: 600px) {
