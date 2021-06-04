@@ -104,6 +104,173 @@ nav ul li a:hover{
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*========================================================================= aryan-=========================================================== */
+
+
+
+
+
+.about_container{
+    background-color: rgba(230, 247, 253, 0.548);
+    /* background-color: rgb(255, 2, 2); */
+    border-radius: 20px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 150px 50px;
+    width: 100%;    
+    margin-top: 50px;
+    margin-bottom: 50px;    
+    box-shadow: 0 0px 56px #ccc;
+}
+.contact_container{
+    /* background-color: rgba(230, 247, 253, 0.548); */
+    /* background-color: rgb(255, 2, 2); */
+    border-radius: 20px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 150px 30px;
+    width: 100%;    
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+    /* box-shadow: 0 0px 56px #ccc; */
+}
+.contact-content{
+    background-color: rgba(230, 247, 253, 0.548);
+    box-shadow: 0 0px 56px #ccc;
+    border-radius: 20px;
+    padding: 20px 40px 20px 40px;            
+    width: 100%;    
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.box{
+    text-align: justify; 
+    height: 100%;
+    width: 100%;    
+}
+.cbox{
+    background-color: rgba(230, 247, 253, 0.548);
+    box-shadow: 0 0px 56px #ccc;
+    border-radius: 20px;
+    text-align: center; 
+    height: 100%;
+    width: 100%;    
+}
+.box1{
+    text-align: center;     
+    height: 100%;
+    width: 100%;
+}
+
+.cbox .smbox{
+    margin: 35px 0px 40px 0px;
+} 
+.cbox .smbox a{
+    margin: 0px 10px 0px 0px;
+    font-size: 20px;
+} 
+
+.smbox{
+    font-size: 20px;
+}
+.smbox a i{
+    font-size: 50px;
+}
+.smbox a span{
+    font-size: 30px;
+} 
+
+.svg_img{
+    /* background-color: aliceblue; */
+    margin: auto;
+    height: 80%;
+    width: 80%;
+
+}
+@media(max-width: 600px){
+    .svg_img{
+        height: 70%;
+        width: 100%;
+
+    }
+    .about_container{
+        grid-gap: 100px 20px;
+    }
+}
+@media(max-width: 470px){
+    .svg_img{
+        height: 80%;
+        width: 80%;
+
+    }
+    .about_container{
+        grid-template-columns: 1fr;
+    }
+    .contact_container{
+        grid-template-columns: 1fr;
+    }
+}
+    
+
+.team_disc{
+    
+    height: 100%;
+    width: 100%;
+}
+form{
+    margin-top: 60px;    
+}
+form div{
+    margin: 0px 0 70px 0;   
+}
+form div input ,form div textarea{
+    max-width: 430px;
+    width: 80%;
+    height: 40px;
+    /* border: 0px; */
+    /* outline: none; */
+    /* border-radius: 10px; */
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: rgba(230, 247, 253, 0);
+    /* box-shadow: 0 10px 15px #ccc; */
+}
+
+form div input:focus , form div textarea:focus{
+    outline: none;
+}
+
+button{
+    background-color: rgb(255, 255, 255);
+    color: red;
+    border: 1px solid violet ;
+    border-radius: 10px;
+    height: 50px;    
+    width: 200px;
+    margin-bottom: 25px ;
+    font-size: 20px;
+}
+
+
+=======
 .short-text { display: none; }
 
 @media (max-width: 600px) {
