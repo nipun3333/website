@@ -113,28 +113,31 @@ nav ul li a:hover{
 
 .name{
     background: #ADEFD1FF;
-    height: 730px;
+    height: 100%;
     width:100%;
     padding-top: 1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .cname{
-    margin-left: 7%;
+    margin-left: 15%;
     margin-top: 250px;
     font-weight: bold;
     color: #00203FFF;
-    font-size: 60px;
+    font-size: 50px;
     font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 3px;
 }
 
 .details{
-    margin-left: 70%;
-    margin-right: 7%;
+    margin-right: 20%;
     font-weight: 500;
     color: #00203FFF;
     font-size: 20px;
-    text-align: center;
+    text-align: justify;
+    margin-top: 220px;
+    padding-bottom: 250px;
     letter-spacing: 2px;
     font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -175,10 +178,13 @@ nav ul li a:hover{
         text-align: center;
         font-size: 18px;
     }
+    .name{
+        grid-template-columns: 1fr;
+    }
     .cname{
         margin: auto;
-        width: 50%;
-        margin-top: 250px;
+        width: 100%;
+        margin-top: 90px;
         font-size: 50px;
         text-align: center;
     }
