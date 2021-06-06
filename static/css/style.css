@@ -164,7 +164,7 @@ nav ul li a:hover{
     box-shadow: 0 0px 56px #ccc;
     border-radius:  0 0 20px 20px;
     padding: 20px 40px 20px 40px;            
-    width: 100%;    
+    width: 100vw;    
     
     margin-bottom: 50px;
 }
@@ -519,5 +519,31 @@ button{
 .map{
     margin:auto;
     width:50%;
-    align:center;
+}
+
+
+.condensers{
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+.condenser-items{
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    margin-bottom: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 0px black;
+    padding: 25px;
+    gap: 50px 40px;
+}
+
+.det{
+    display: grid;
+    grid-template-rows: 1fr 0.5fr;
+}
+
+.img{
+    text-align: center;
 }
