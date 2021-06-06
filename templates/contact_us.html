@@ -13,22 +13,29 @@
   <div class="cbox">
     <h1>How Can We Help You ?</h1>
     
-    <form action="#">
+    <form action="{% url 'contact_us' %}" method="POST">
+      {% csrf_token %}
       <div>
         <h3 for="name">First Name</h3>
-        <input type="text" placeholder="First Name" name="myName" maxlength="60">
+        <input type="text" placeholder="First Name" name="myFName" maxlength="60">
         
       </div>
 
       <div>
         <h3 for="name">Last Name</h3>
-        <input type="text" placeholder="Last Name" name="myName" maxlength="60" >
+        <input type="text" placeholder="Last Name" name="myLName" maxlength="60" >
         
       </div>
 
       <div>
         <h3 for="name">Email</h3>
         <input type="email" placeholder="Email-ID" name="myEmail">
+        
+      </div>
+
+      <div>
+        <h3 for="name">Contact Number</h3>
+        <input type="text" placeholder="Contact-Number" name="contact_number" maxlength="10" >
         
       </div>
 
