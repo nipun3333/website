@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block body %}
+
+<h1>{{category}}</h1>
+
+<div class="condensers">
+    {% for item in data %}
+        <div class="condenser-items">
+            <div class="img">
+                <img src="{{item.image.url}}" alt="{{item.title}}" width="250px" height="250px">
+            </div>
+            <div class="det">
+                <div class="condenser-items-details">
+                    <h3>{{item.title}}</h3>
+                    <p>{{item.desc}}</p>
+                </div>
+                <div class="button">
+                    <button>Know More</button>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+    
+</div>
+
+
+{% endblock %}
