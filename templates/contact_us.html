@@ -2,14 +2,15 @@
 
 {% block body %}
 
-<div class="contact-content">
-  <h1>Contact Us</h1>
-  <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est saepe atque inventore ab molestias? Dicta, maiores
-    quaerat eius perspiciatis voluptatibus officia vitae corrupti quibusdam distinctio expedita dolor, et alias libero.
-  </h4>
-</div>
+
 
 <div class="contact_container">
+
+  <div class="contact-content">
+    <h1>CONTACT</h1>
+    <hr style="width: 90%; border: 1px solid black; margin: 0 auto 0 auto;">
+  </div>
+
   <div class="cbox">
     <h1>How Can We Help You ?</h1>
     
@@ -41,7 +42,7 @@
 
       <div>
         <h3 for="name">How can we help you ?</h3>
-        <textarea name="description"></textarea>
+        <textarea name="description" cols="30" rows="10"></textarea>
         
       </div>
 
@@ -50,13 +51,34 @@
     </form>
   </div>
 
-  <div class="cbox">
+  <div class="cbox cbox1">
+    
     <div class="smbox">
-      <a style="display: inline;" href="#">
+      <a href="#">
+        <span class="material-icons">
+          location_on 
+        </span>
+      </a>
+      <p>Plot No. 280, Road No. 2, GIDC, Kathwada GIDC, <br>Ahmedabad-382430, Gujarat, India</p>
+    </div>
+
+
+    <div class="smbox">
+      <a href="#">
+        <span class="material-icons">
+          account_circle
+        </span>
+      </a>
+      <p>Dinesh Bhai Panchal (Partner)</p>
+    </div>
+
+    <div class="smbox">
+      <a href="#">
         <span class="material-icons">email</span>
       </a>
-      <p style="display: inline;">Email</p>
+      <p>Email</p>
     </div>
+  
 
     <div class="smbox">
       <a href="#"><i class="fab fa-facebook" style="font-size:24px"></i></a>
@@ -74,8 +96,6 @@
     </div>
 
   </div>
-
 </div>
-
 
 {% endblock %}
