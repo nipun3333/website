@@ -1,13 +1,18 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.core.mail import send_mail
+from .models import Products, Categories
 
 # Create your views here.
 def home(request):
     return render(request, "home.html")
 
 def facilities_products(request):
-    return render(request, "facilities_products.html")
+    categories = Categories.objects.all()
+    cat = []
+    for i in categories:
+        cat.append({"category":i.category})
+    return render(request, "facilities_products.html",{"categories":cat})
 
 def about_us(request):
     return render(request, "about_us.html")
@@ -33,6 +38,18 @@ def contact_us(request):
         return render(request, "contact_us.html")
 
     return render(request, "contact_us.html")
+
+
+
+
+def products(request, cat):
+    data = Products.objects.all()
+    d = []
+    for i in data:
+        if str(i.category).lower()==cat.lower():
+            d.append({"title":i.title, "category":i.category, "desc":i.desc})
+
+    return render(request, "products/condensers.html", {"data":d, "category":cat})
 
 
 def condensers(request):

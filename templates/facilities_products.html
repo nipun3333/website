@@ -5,6 +5,11 @@
 
     <h1> Facilities and Product </h1> 
 
+    {% for cat in categories %}
+        <a href="/facilities_products/{{cat.category}}"><h1> {{cat.category}} </h1></a>
+    {% endfor %}
+
+
     <div class="home-profile">
         <div class="home-profile-title">Products And Services</div>
         <hr>
@@ -21,7 +26,7 @@
                 <p>Amonia Condensers</p>
                 <p>Condensers</p>
                 <p>Surface Condensers</p>                
-                <p><a style="font-size: 20px;" href="/condensers">View Details ></a></p>
+                <p><a style="font-size: 20px;" href="/facilities_products/condensers">View Details ></a></p>
             </div>
         </div>
 
