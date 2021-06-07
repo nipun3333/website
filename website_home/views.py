@@ -5,8 +5,8 @@ from django.http import HttpResponse
 def home(request):
     return render(request, "home.html")
 
-def facilities(request):
-    return render(request, "facilities.html")
+def facilities_products(request):
+    return render(request, "facilities_products.html")
 
 def about_us(request):
     return render(request, "about_us.html")

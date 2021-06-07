@@ -176,7 +176,7 @@ nav ul li a:hover{
 }
 
 .contact-content h1{ 
-    font-size: 70px;
+    font-size: 60px;
     letter-spacing: 0.5px;
 }
 
@@ -312,6 +312,7 @@ form div input ,form div textarea{
     /* max-width: 530px; */
     width: 70%;
     height: 40px;
+    font-size: 20px;
     /* border: 0px; */
     /* outline: none; */
     /* border-radius: 10px; */
@@ -321,6 +322,10 @@ form div input ,form div textarea{
     border-bottom-style: groove;
     background-color: rgba(230, 247, 253, 0);
     /* box-shadow: 0 10px 15px #ccc; */
+}
+
+form div textarea{
+    height: 100px;
 }
 
 form div input:focus , form div textarea:focus{
