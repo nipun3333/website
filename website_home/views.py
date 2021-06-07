@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.core.mail import send_mail
-from .models import Products, Categories
+from .models import Products, Categories, Images
 
 # Create your views here.
 def home(request):
@@ -11,8 +11,13 @@ def facilities_products(request):
     categories = Categories.objects.all()
     cat = []
     for i in categories:
-        cat.append({"category":i.category})
-    return render(request, "facilities_products.html",{"categories":cat})
+        cat.append({"category":i.category, "desc":i.cat_desc})
+        
+    imgs = Images.objects.all()
+    images = []
+    for i in imgs:
+        images.append({"category":i.category, "image":i.image})
+    return render(request, "facilities_products.html",{"categories":cat, "images":images})
 
 def about_us(request):
     return render(request, "about_us.html")
@@ -47,7 +52,8 @@ def products(request, cat):
     d = []
     for i in data:
         if str(i.category).lower()==cat.lower():
-            d.append({"title":i.title, "category":i.category, "desc":i.desc})
+            print(i.image)
+            d.append({"title":i.title, "category":i.category, "desc":i.desc, "image":i.image})
 
     return render(request, "products/condensers.html", {"data":d, "category":cat})
 

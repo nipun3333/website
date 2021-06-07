@@ -7,6 +7,14 @@
 
     {% for cat in categories %}
         <a href="/facilities_products/{{cat.category}}"><h1> {{cat.category}} </h1></a>
+        <h3> {{cat.desc}} </h3>
+
+        {% for imgs in images %}
+            <!-- {{imgs.category}} {{cat.category}} -->
+            {% if imgs.category is cat.category %}
+                <img src="{{imgs.image.url}}" alt="{{imgs.category}}" width="250px" height="250px">
+            {% endif %}
+        {% endfor %}
     {% endfor %}
 
 
