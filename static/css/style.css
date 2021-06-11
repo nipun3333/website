@@ -1011,3 +1011,13 @@ button {
   position: absoute;
   bottom: 0;
 }
+
+.items-slider{
+    width: 90vw; 
+    height: 100%;   
+}
+
+.items-slider img{
+    width: 400px;
+    height: 400px;
+}
