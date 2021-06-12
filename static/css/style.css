@@ -13,7 +13,6 @@ html{
 
 body {
   overscroll-behavior-y: none;
-   
 }
 body::-webkit-scrollbar {
   display: none;
@@ -245,7 +244,7 @@ nav ul li a:hover{
     text-align: center;     
     height: 100%;
     width: 100%;
-    
+    border-radius: 50%;
 }
 .box1 img{
     height: 300px;
@@ -360,10 +359,10 @@ form div input:focus , form div textarea:focus{
     outline: none;
 }
 
-.button button{
-    /* background-color: rgb(255, 255, 255); */
-    background-color: rgb(241 241 241);
-    color: rgb(0, 0, 0);
+.button1 button{
+    background-color: rgb(0, 0, 0);
+    /* background-color: rgb(241, 241, 241); */
+    color: rgb(255, 255, 255);
     /* border: 1px solid rgb(130, 238, 229) ; */
     border-radius: 10px;
     /* border-color: white; */
@@ -374,9 +373,9 @@ form div input:focus , form div textarea:focus{
     font-size: 20px;
     transition: transform 0.3s;
 }
-.button button:hover{
+.button1 button:hover{
     transform: scale(1.01);
-    background-color:#eaeaea
+    background-color:#3473a7
     /* box-shadow: 0 0px 3px #ccc; */
 }
 
@@ -887,9 +886,9 @@ button {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    background-color: #095484;
+    background-color: #000000;
     font-size: 16px;
-    color: rgb(216, 30, 30);
+    color: rgb(255, 255, 255);
     cursor: pointer;
 }
  button:hover{
@@ -1013,7 +1012,7 @@ button {
 }
 
 .items-slider{
-    width: 90vw; 
+    /* width: 90vw;  */
     height: 100%;   
 }
 
