@@ -55,13 +55,13 @@ def products(request, cat):
             print(i.image)
             d.append({"title":i.title, "category":i.category, "desc":i.desc, "image":i.image})
 
-    return render(request, "products/condensers.html", {"data":d, "category":cat})
+    return render(request, "products/products.html", {"data":d, "category":cat})
     
 
 
 def condensers(request):
     
-    return render(request, "products/condensers.html")
+    return render(request, "products/products.html")
 
 def tyre_recycling_plant(request):
     return render(request, "products/tyre_recycling_plant.html")
